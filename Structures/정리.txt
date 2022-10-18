@@ -1,0 +1,9 @@
+Structurs
+
+추상이란?
+한 사람의 특징이나 특성
+구조체란?
+기본 자료형을 사용하여 새로운 자료형으로 만들어진 자료형
+구조체를 초기화할 때는 struct Address man2 = {"Juwon", "010-3512-1835", "Suwon"};, 멤버의 값을 대입할 때는 strcpy(man1.phon, "010-9642-1254"); 씁니다.
+strcpy는 문자열을 쓸 때 사용하는 것입니다.
+예) strcpy(man1.home, "Dae-gu");
