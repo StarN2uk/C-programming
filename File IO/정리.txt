@@ -1,0 +1,25 @@
+File I/O
+
+bus의 갯수에 따라 byte가 달라진다.
+모드의 가짓수
+W(rite) = 쓰기, R(ead) = 읽기, A(dd) = 추가
+fopen => FILE *fp = fopen("datafile.txt(file 이름, 경로)", "w(모드)");
+W = 해당 파일이 없는 경우 새로 파일 생성. 있으면 삭제하고 새로 생성
+R = 해당 파일이 없는 경우 NULL 리턴. 있으면 주소값 리턴
+A = 해당 파일이 없는 경우 새로 파일 생성. 있으면 출력 내용을 파일 뒤에 추가
+f(file)put(넣어준다)c(char) = 파일에 문자를 넣어준다.
+(예) => fputc('A', fp);
+f(file)get(가져오다)c(char) = 파일에서 문자를 차례대로 읽어온다.
+(예) => ch = fgetc(fp);
+f(file)put(넣어준다)s(string) = 파일에 문자열을 출력한다.
+(예) => fputs(str1, out);
+f(file)get(가져오다)s(string) = 파일에서 문자열을 길이 만큼 입력 받아 배열에 저장한다.
+(예) => fgets(str1, sizeof(str1)-1, in);
+stdout = 표준 출력 스트림
+stdin = 표준 입력 스트림
+stderr = 표준 에러 스트림
+EOF = End of File
+f(file)print(출력하다)f(format) = 파일에 데이터 출력
+(예) => fprintf(stdout, "%d %d\n", n, m);
+f(file)scan(확인하다)f(format) = 파일에 데이터 입력
+(예) => fscanf(stdin, "%lf %lf", &d1, &d2);
