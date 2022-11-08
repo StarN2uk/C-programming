@@ -1,0 +1,13 @@
+I/O Buffer
+
+LIFO
+뜻 = L(ast)I(nput)F(irst)O(utput)
+가장 마지막에 들어간 것이 제일 먼저 나온다.
+이런 형태를 "STACK"이라고 합니다.
+버퍼란?
+일시적으로 데이터를 보관하는 영역
+scanf()는 공백류를 무시해버린다.
+scanf()를 연속적으로 사용하는 경우, 버퍼에 남아있는 입력 값들을 뒤의 scanf()가 입력으로 사용한다.
+CON(sole)I(nput)O(utput) = 콘솔창에 입/출력 하는 함수들이 담긴 헤더파일
+GETCH(racter)E(cho) = 버퍼를 사용하지 않는 문자 입력 함수
+(예) -> ch = getche();
