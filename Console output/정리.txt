@@ -1,0 +1,8 @@
+ Console output
+
+콘솔이란? 명령어를 사용할 수 있는 것
+	       C(omand)L(ine)I(nterface) 	             GUI
+     난이도      어려움                           쉬움
+      제어  		많은 제어   	                  적은 제어
+      속도   	  빠른 처리                       느린 처리
+COORD -> 좌표 정보를 저장하는 구조체(x, y)
