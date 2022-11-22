@@ -3,12 +3,12 @@
 #include<time.h>
 #include<windows.h>
 int i;
-char score;
+char money;
 
-void Fileprinter(score)
+void Fileprinter(money)
 {
 	FILE *fp = fopen("scoreFile.txt", "w");
-	fputc(score, fp);
+	fputc(money, fp);
 }
 
 void Theme(i)
@@ -21,12 +21,35 @@ void Theme(i)
 void Rullet()
 {
 	system("cls");
+	printf("돌려 돌려 돌림판!!!\n지금 바로 시작합니다.");
+	Sleep(2000);
 	srand(time(NULL));
-	printf("%d");
-	switch(rand())
+	switch(rand() % 8)
 	{
 		case 1:
-			printf("");
+			// 코인
+			printf("축하합니다!!! 코인이 당첨되셨습니다.");
+			money = money + 5000;
+			Fileprinter(money);
+			break;
+		case 2:
+			// 다이아몬드
+			printf("정말 운이 좋군요?!! 다이아몬드에 당첨되셨어요!!"); 
+		case 3:
+			//꽝
+			printf("아쉽네요... 다시 한 번 ㄱㄱ?"); 
+		case 4:
+			//똥
+			printf("이번 판은 운이 안 좋았나봐요ㅠㅠ"); 
+		case 5:
+			//다이아몬드
+			printf("정말 운이 좋군요?!! 다이아몬드에 당첨되셨어요!!");
+		case 6:
+			//꽝
+			printf("아쉽네요... 다시 한 번 ㄱㄱ?");
+		case 7:
+			//똥
+			printf("이번 판은 운이 안 좋았나봐요ㅠㅠ");
 	}
 }
 
@@ -35,12 +58,9 @@ void GAME(int j)
 	system("cls");
 	switch(j)
 	{
-		case 1:
+		case 0:
 			Rullet();
 			break;
-		case 2:
-			break;
-		
 	}
 }
 
