@@ -3,12 +3,13 @@
 #include<time.h>
 #include<windows.h>
 int money = 0;
-int hunger = 0;
 void STD_OUPUT();
 void Theme();
 void Fileprinter(int money);
 void GAME(int c);
 void Rullet();
+void LastMoney();
+void FoodShopping();
 
 void Rullet()
 {
@@ -72,6 +73,20 @@ void Rullet()
 	system("cls");
 }
 
+void LastMoney()
+{
+	system("cls");
+	printf("남은 돈-> %d원", money);
+	Sleep(3000);
+	system("cls");
+}
+
+void FoodShopping()
+{
+	system("cls");
+	printf("$$$$$$$$$$$$$$$$$$$PC방 음식 메뉴$$$$$$$$$$$$$$$$$$$\n1. 신라면(2000원)\n2. 너구리(2800원)\n3. 복숭아 아이스티(1000원)\n4. 짜파게티(3000원)\n");
+}
+
 void GAME(int c)
 {
 	system("cls");
@@ -81,6 +96,10 @@ void GAME(int c)
 			Rullet();
 			break;
 		case 4:
+			LastMoney();
+			break;
+		case 5:
+			FoodShopping();
 			break;
 	}
 }
@@ -95,7 +114,7 @@ void Fileprinter(int money)
 void Theme()
 {
 	int i;
-	printf("###################가짜 PC방###################\n1. 룰렛 돌리기(코인 -> 5000원, 다이아몬드 -> 10000원, 꽝 -> 0원, 똥 -> -1000원)\n2. 가위 바위 보(이기면 1000원, 지면 -1000원, 비기면 - 500원)\n3. 텔레파시 게임\n4. 남은 돈 확인하기&배고품 확인하기\n5. 음식 사기");
+	printf("###################가짜 PC방###################\n1. 룰렛 돌리기(코인 -> 5000원, 다이아몬드 -> 10000원, 꽝 -> 0원, 똥 -> -1000원)\n2. 가위 바위 보(이기면 1000원, 지면 -1000원, 비기면 - 500원)\n3. 텔레파시 게임(통하면 1000원, 빗나가면 -1000원)\n4. 남은 돈 확인하기\n5. 음식 사기");
 	printf("\n당신이 원하는 게임 = ");
 	scanf("%d", &i);
 	GAME(i);
