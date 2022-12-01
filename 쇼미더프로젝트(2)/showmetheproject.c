@@ -196,7 +196,7 @@ void RockScissorsPaper(int option)
 	printf("##################가위바위보##################\n바위는 1, 가위는 2, 보자기는 3입니다.\n");
 	scanf("%d", &option);
 	srand(time(NULL));
-	switch(rand() % 4)
+	switch(rand() % 3 + 1)
 	{
 		case 1:
 			// 주먹
@@ -302,12 +302,12 @@ void OP1(int s1)
 	printf("1. 시금치\n2. 땀냄새\n3. 곤충\n4. 동물\n");
 	scanf("%d", &s1);
 	srand(time(NULL));
-	switch(rand() % 5)
+	switch(rand() % 4 + 1)
 	{
 		case 1:
 			if(s1 == 1)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -326,7 +326,7 @@ void OP1(int s1)
 		case 2:
 			if(s1 == 2)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -345,7 +345,7 @@ void OP1(int s1)
 		case 3:
 			if(s1 == 3)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -364,7 +364,7 @@ void OP1(int s1)
 		case 4:
 			if(s1 == 4)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -389,12 +389,12 @@ void OP2(int s2)
 	printf("1. 농구\n2. 축구\n3. 게임\n4. 유튜브\n");
 	scanf("%d", &s2);
 	srand(time(NULL));
-	switch(rand() % 5)
+	switch(rand() % 4 + 1)
 	{
 		case 1:
 			if(s2 == 1)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -413,7 +413,7 @@ void OP2(int s2)
 		case 2:
 			if(s2 == 2)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -432,7 +432,7 @@ void OP2(int s2)
 		case 3:
 			if(s2 == 3)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -451,7 +451,7 @@ void OP2(int s2)
 		case 4:
 			if(s2 == 4)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -476,12 +476,12 @@ void OP3(int s3)
 	printf("1. 공차기\n2. 달리기\n3. 대화하기\n4. 놀기\n");
 	scanf("%d", &s3);
 	srand(time(NULL));
-	switch(rand() % 5)
+	switch(rand() % 4 + 1)
 	{
 		case 1:
 			if(s3 == 1)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -500,7 +500,7 @@ void OP3(int s3)
 		case 2:
 			if(s3 == 2)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -519,7 +519,7 @@ void OP3(int s3)
 		case 3:
 			if(s3 == 3)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
@@ -538,7 +538,7 @@ void OP3(int s3)
 		case 4:
 			if(s3 == 4)
 			{
-				printf("텔레파시가 통했어요!!!! 돈 + 1000원");
+				printf("텔레파시가 통했어요!!!! 돈 + 7000원");
 				money = money + 7000;
 				Fileprinter(money);
 				break; 
